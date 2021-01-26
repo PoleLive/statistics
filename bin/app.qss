@@ -1,0 +1,39 @@
+QPushButton
+{
+	padding: 8px;
+	width: 80px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border: 1px solid lightgray;
+	border-radius: 6px;
+	background-color: rgb(28, 147, 242);
+	color: white;
+}
+QPushButton#OpenDatabase
+{
+	 image: url("17.png");
+	 padding: 0px;
+	 width: 40px;
+	 height: 40px;
+	 background-color: white;
+}
+QPushButton:hover
+{
+	background-color: lightblue;
+}
+* {
+	font-size: 12pt;
+}
+TableWidget, QWidget#MainContent, MainWindow
+{
+	background-color: white;
+}
+QHeaderView::section {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+QTableView
+{
+	text-align: center;
+}
+

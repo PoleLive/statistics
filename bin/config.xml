@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<Statistics>
+		<Type>
+			<Field>DeviceType</Field>
+			<Value>A</Value>
+		</Type>
+		<Data>
+			<Field>ErroRate1</Field>
+			<Value>0</Value>
+		</Data>
+	</Statistics>
+	<PrintTitle>
+		<Title>打印标题</Title>
+		<Subtitle>打印副标题</Subtitle>
+	</PrintTitle>
+	<PrintFieldList>
+		<Field>ID</Field>
+		<Field>Desciption</Field>
+		<Field>DeviceType</Field>
+		<Field>DeviceName</Field>
+		<Field>ErroRate1</Field>
+		<Field>TestBitNum1</Field>
+		<Field>ErroRate2</Field>
+		<Field>TestBitNum2</Field>
+	</PrintFieldList>
+</root>
