@@ -22,6 +22,7 @@ MainWindow::MainWindow(QWidget *parent) :
     //QPushButton *pButton = new QPushButton("");
     //pButton->setObjectName("OpenDatabase");
     //pStatusBar->addWidget(pButton);
+
     QAction *pHomeAction = new QAction(QIcon(":/icon/home.png"), "主页");
     QAction *pDatabaseAction = new QAction(QIcon(":/icon/file.png"), "打开数据库");
     QAction *pStatisticsAction = new QAction(QIcon(":/icon/statistics.png"), "统计");
@@ -32,6 +33,7 @@ MainWindow::MainWindow(QWidget *parent) :
     pToolBar->addAction(pStatisticsAction);
     pToolBar->addAction(pPrintAction);
     pToolBar->addAction(pSettingAction);
+
     pToolBar->setIconSize(QSize(80, 50));
     connect(pDatabaseAction, &QAction::triggered, [=](){
         QStringList	fileList = QFileDialog::getOpenFileNames(this, "打开数据库", "", "*.db");
