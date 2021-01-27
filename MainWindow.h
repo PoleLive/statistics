@@ -5,7 +5,7 @@
 namespace Ui {
 class MainWindow;
 }
-
+class AnalogClock;
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -16,6 +16,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    AnalogClock *m_pHomeWidget;
 };
 
 

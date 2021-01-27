@@ -10,7 +10,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++11
 
-TARGET = ../bin/PrintDemo
+TARGET = ../../PrintDemo/bin/PrintDemo
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -35,7 +35,8 @@ SOURCES += \
     HistogramWidget.cpp \
     SqlTableModel.cpp \
     analogclock.cpp \
-    digitalclock.cpp
+    digitalclock.cpp \
+    StatisticsWidget.cpp
 
 HEADERS += \
         MainWindow.h \
@@ -46,7 +47,8 @@ HEADERS += \
     HistogramWidget.h \
     SqlTableModel.h \
     analogclock.h \
-    digitalclock.h
+    digitalclock.h \
+    StatisticsWidget.h
 
 FORMS += \
         MainWindow.ui

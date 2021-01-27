@@ -5,5 +5,7 @@
         <file>print.png</file>
         <file>setting.png</file>
         <file>home.png</file>
+        <file>table.png</file>
+        <file>table2.png</file>
     </qresource>
 </RCC>
