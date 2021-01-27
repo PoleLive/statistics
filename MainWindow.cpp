@@ -20,7 +20,7 @@ MainWindow::MainWindow(QWidget *parent) :
     //QPushButton *pButton = new QPushButton("");
     //pButton->setObjectName("OpenDatabase");
     //pStatusBar->addWidget(pButton);
-    pToolBar->addAction(new QAction(QIcon(":/icon/home.png"), "主页"));
+    pToolBar->addAction(new QAction(QIcon(":/icon/home.png"), "主界面"));
     pToolBar->addAction(new QAction(QIcon(":/icon/file.png"), "打开数据库"));
     pToolBar->addAction(new QAction(QIcon(":/icon/statistics.png"), "统计"));
     pToolBar->addAction(new QAction(QIcon(":/icon/print.png"), "打印预览"));
