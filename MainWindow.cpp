@@ -12,16 +12,12 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    //TableWidget *widget = new TableWidget("TestResult");
 
     resize(1920, 1080);
     m_pHomeWidget = new AnalogClock(this);
     setCentralWidget(m_pHomeWidget);
 
     QToolBar *pToolBar = new QToolBar();
-    //QPushButton *pButton = new QPushButton("");
-    //pButton->setObjectName("OpenDatabase");
-    //pStatusBar->addWidget(pButton);
 
     QAction *pHomeAction = new QAction(QIcon(":/icon/home.png"), "主页");
     QAction *pDatabaseAction = new QAction(QIcon(":/icon/file.png"), "打开数据库");

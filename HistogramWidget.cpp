@@ -31,6 +31,19 @@ HistogramWidget::HistogramWidget(const QString title,
 
 }
 
+void HistogramWidget::SetData(const QString title, QList<QString> itemNames,
+                              QList<QString> channelNames, QList<int> datas1, QList<int> datas2)
+{
+    m_iSum1 = 0;
+    m_iSum2 = 0;
+    m_ItemNames = itemNames;
+    m_ChannelNames = channelNames;
+    m_Datas1 = datas1;
+    m_Datas2 = datas2;
+    m_strTitle = title;
+    repaint();
+}
+
 void HistogramWidget::paintEvent(QPaintEvent *event)
 {
     QPainter painter(this);

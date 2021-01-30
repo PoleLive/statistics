@@ -10,7 +10,12 @@ class HistogramWidget : public QWidget
 {
     Q_OBJECT
 public:
-    HistogramWidget(const QString title, QList<QString> itemNames, QList<QString> channelNames ,QList<int> datas1, QList<int> datas2,QWidget *parent = nullptr);
+    HistogramWidget(const QString title, QList<QString> itemNames,
+                    QList<QString> channelNames ,QList<int> datas1,
+                    QList<int> datas2,QWidget *parent = nullptr);
+    void SetData(const QString title, QList<QString> itemNames,
+                 QList<QString> channelNames ,QList<int> datas1,
+                 QList<int> datas2);
     void paintEvent(QPaintEvent *event) override;
 private:
     void ComputeMaxNumber();
